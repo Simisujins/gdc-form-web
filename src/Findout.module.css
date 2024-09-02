@@ -1,0 +1,115 @@
+.container{
+   background-image: url('/images/blackback.jpg');
+  background-size: cover; /* Adjust background size as needed */
+  background-position: center;  /* Center the background image */
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+
+.findout {
+
+text-align: center;
+font-family: Georgia;
+justify-content: center;
+color: white;
+margin-top: 3%;
+font-size: 25px;
+}
+
+.title {
+margin-top: 5%;
+
+}
+
+.titles {
+margin-top: 1%;
+}
+
+.titless {
+margin-top: 1%;
+}
+
+.btn {
+margin-top: 1%;
+border: solid 2px #daa520e0;
+padding: 15px;
+border-radius: 10px;
+color: #daa520e0;
+margin-top: 8%;
+font-size: 40px;
+box-shadow: 0 0 10px 10px rgba(231, 171, 19, 0.4);
+}
+
+.btn:hover {
+background-color: #daa520e0;
+color: white; /* Change to your desired hover color */
+cursor: pointer;
+}
+
+/* Media Queries for Responsive Design */
+
+@media screen and (max-width: 768px) {
+  .container {
+    margin: 5% auto; 
+    padding: 30px;
+  }
+
+  .findout {
+    font-size: 18px; 
+    margin-top: 5%;
+  }
+
+  .title {
+    font-size: 18px; 
+    margin-top: 3%;
+  }
+
+  .titles {
+    font-size: 18px; 
+    margin-top: 2%;
+  }
+
+  .titless {
+    font-size: 18px; 
+    margin-top: 1%;
+  }
+
+  .btn {
+    font-size: 20px; 
+    margin-top:15%;
+    padding: 12px 25px; 
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    margin: 15% auto; 
+    padding: 10px; 
+  }
+
+  .findout {
+    font-size: 16px; 
+    margin-top: 5%;
+  }
+
+  .title {
+    font-size: 16px; 
+    margin-top: 3%;
+  }
+
+  .titles {
+    font-size: 16px; 
+    margin-top: 2%;
+  }
+
+  .titless {
+    font-size: 16px; 
+    margin-top: 1%;
+  }
+
+  .btn {
+    font-size: 18px; 
+    margin-top: 5%;
+    padding: 10px 20px; 
+  }
+}

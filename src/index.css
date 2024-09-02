@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla:wght@400;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  background: black;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* == Custom properties == */
+:root {
+  /* = Colors = */
+  /* Primary */
+
+  --brand-gold: rgb(231, 171, 19);
+
+  --dark-violet: hsl(256, 92%, 50%);
+  --grayish-blue: hsl(216, 87%, 53%);
+  /* Neutral */
+  --very-dark-violet: hsl(271, 75%, 54%);
+  --dark-grayish-violet: hsl(273, 4%, 51%);
+  --very-light-gray: hsl(0, 0%, 98%);
+  /* = Font = */
+  --ff-display: "DM Serif Display", serif;
+  --ff-karla: "Karla", sans-serif;
+  --fw-karla-bold: 700;
+  --fs: 1rem;
+  /* = Spacing = */
+  --top-bar-height: 5rem;
+
+  --mobile-pad-b: 1.5rem;
+  --mobile-pad-i: 1.75rem;
+
+  --desktop-pad-b: 1.5rem;
+  --desktop-pad-i: 10.5rem;
+}
+
+/* == Global styling == */
+#root {
+  display: grid;
+  row-gap: 8.5rem;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--ff-karla);
+  font-size: var(--fs);
+}
+
+.lockScroll {
+  overflow: hidden;
+}
+
+main {
+  display: grid;
+  row-gap: 8rem;
+}
+
+@media screen and (min-width: 1024px) {
+  #root {
+    row-gap: 8rem;
+  }
+}

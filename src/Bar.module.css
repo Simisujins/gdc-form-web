@@ -1,0 +1,74 @@
+.Bar {
+    background-color: black;
+}
+
+.top_bar {
+    padding: var(--mobile-pad-b) var(--mobile-pad-i);
+    height: var(--top-bar-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed; /* Fixed position to keep it at the top */
+    top: 0; /* Positioned at the very top */
+    width: 100%; /* Ensure it spans the full width of the viewport */
+    z-index: 100; /* Ensuring the top bar is always on top */
+    background-color: black; /* Black background color */
+}
+
+.app_logo {
+    width: 100px; /* A more specific width for better control */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.menu_btn {
+    padding: 0;
+    border: 0;
+    cursor: pointer;
+}
+
+.open {
+    padding: var(--mobile-pad-b) var(--mobile-pad-i);
+    height: calc(100vh - var(--top-bar-height));
+    background-color: black;
+}
+
+@media screen and (min-width: 1024px) {
+    .top_bar {
+        padding: var(--desktop-pad-b) var(--desktop-pad-i);
+        height: fit-content;
+    }
+
+    .menu_btn {
+        display: none;
+    }
+
+    .app_logo {
+        width: 200px; /* Larger size for desktop screens */
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .top_bar {
+        padding: var(--mobile-pad-b) var(--mobile-pad-i);
+        height: var(--top-bar-height);
+        background-color: black; /* Black background color */
+    }
+
+    .app_logo {
+        width: 150px; /* Smaller size for mobile screens */
+    }
+
+    .menu_btn {
+        width: 35px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .app_logo {
+        width: 120px; /* Intermediate size for tablet screens */
+    }
+
+    .menu_btn {
+        width: 35px;
+    }
+}

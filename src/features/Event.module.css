@@ -1,0 +1,337 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.intro_content {
+  margin-top: 2%;
+  color: white;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.description_text {
+  line-height: 2.5;
+  background-color: rgb(27, 26, 26);
+  padding: 4rem 2.5rem;
+  margin-left: -40px;
+}
+
+.image {
+  height: fit-content;
+  width: 80%;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  gap: 2.5rem;
+  margin-top: 10%;
+  font-family: Georgia;
+}
+
+.catCard {
+  border: 1px solid transparent;
+}
+
+.catCard:hover {
+  border: 1px solid rgb(231, 171, 19);
+}
+
+.catCard > h3 {
+  letter-spacing: 1px;
+  font-weight: bold;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  margin-bottom: 12px;
+}
+
+.catCard > p {
+  letter-spacing: 1px;
+  line-height: 1.5;
+  margin-top: 5px;
+}
+
+.descriptions {
+  background-color: rgb(27, 26, 26);
+  padding: 25px;
+  border-radius: 5px;
+  text-align: center;
+  transition: transform 0.5s ease-in-out;
+}
+
+.descriptions:hover {
+  transform: scale(1.2);
+}
+
+.descriptions1 {
+  background-color: rgb(27, 26, 26);
+  padding: 25px;
+  border-radius: 5px;
+  text-align: center;
+  transition: transform 0.5s ease-in-out;
+}
+
+.descriptions1:hover {
+  transform: scale(1.2);
+}
+
+.descriptions2 {
+  background-color: rgb(27, 26, 26);
+  padding: 25px;
+  border-radius: 5px;
+  text-align: center;
+  transition: transform 0.5s ease-in-out;
+}
+
+.descriptions2:hover {
+  transform: scale(1.2);
+}
+
+.imagesection {
+  display: flex;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+.findout {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.findout_detail {
+  font-family: Georgia;
+  font-size: 19px;
+  line-height: 2;
+  letter-spacing: 1px;
+  padding: 5rem 4rem;
+  margin-right: -20px;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(31, 28, 28);
+}
+
+.btn {
+  margin-top: 5%;
+  color: #daa520e0;
+  padding: 2%;
+  border-radius: 6px;
+  background-color: transparent;
+  border: solid 2px white;
+}
+
+.btn:hover {
+  background-color: #daa520e0;
+  color: white;
+}
+
+.box {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin-top: 15%;
+  margin-bottom: 10%;
+}
+
+.description {
+  font-family: Georgia;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 2;
+  letter-spacing: 1px;
+}
+
+.who_are_we {
+  font-size: large;
+  display: block;
+  width: 100%;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: underline;
+  letter-spacing: 2px;
+  color: #daa520e0;
+  text-underline-offset: 3px;
+}
+
+@media screen and (max-width: 768px) {
+  .intro_content {
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+
+  .description {
+    padding-left: 3%;
+  }
+
+  .content {
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 10%;
+    padding-top: 8%;
+  }
+
+  .image {
+    width: 100%;
+  }
+
+  .description {
+    line-height: 1.8;
+    letter-spacing: 0.8px;
+  }
+
+  .who_are_we {
+    padding-left: 3%;
+    font-size: medium;
+  }
+
+  .descriptions,
+  .descriptions1,
+  .descriptions2 {
+    padding: 15px;
+  }
+
+  .findout_detail {
+    padding: 3rem 2rem;
+  }
+
+  .btn {
+    margin-top: 3%;
+    padding: 1.5%;
+  }
+
+  .box {
+    padding-top: 5%;
+    flex-direction: column;
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+
+  .imagesection {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding-top: 5%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .findout_detail {
+    font-size: 12px;
+    padding: 3rem;
+    margin-right: 0;
+  }
+
+  .btn {
+    margin-top: 3%;
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .intro_content {
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+
+  .content {
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 3%;
+  }
+
+  .imagesection {
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+
+  .findout_detail {
+    padding: 2rem 1rem;
+  }
+
+  .btn {
+    margin-top: 2%;
+    padding: 1%;
+  }
+
+  .box {
+    margin-top: 2%;
+    margin-bottom: 5%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .intro_content {
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+
+  .description {
+    padding-left: 3%;
+  }
+
+  .content {
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 10%;
+    padding-top: 8%;
+  }
+
+  .image {
+    width: 100%;
+  }
+
+  .description {
+    line-height: 1.8;
+    letter-spacing: 0.8px;
+  }
+
+  .who_are_we {
+    padding-left: 3%;
+    font-size: medium;
+  }
+
+  .descriptions,
+  .descriptions1,
+  .descriptions2 {
+    padding: 15px;
+  }
+
+  .findout_detail {
+    padding: 3rem 2rem;
+  }
+
+  .btn {
+    margin-top: 3%;
+    padding: 1.5%;
+    font-size: 14px;
+  }
+
+  .box {
+    padding-top: 10%;
+    flex-direction: column;
+    margin-top: 30%;
+    margin-bottom: 10%;
+  }
+
+  .imagesection {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding-top: 5%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .findout_detail {
+    font-size: 12px;
+    padding: 3rem;
+    margin-right: 0;
+  }
+
+  .btn {
+    margin-top: 3%;
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}

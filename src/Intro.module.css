@@ -1,0 +1,138 @@
+.intro_img {
+  width: fit-content;
+  margin-inline: auto;
+}
+
+@media screen and (min-width: 1025px) {
+  .intro {
+    background: url("/images/banner wb.jpg");
+    height: 500px;
+    border-bottom-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+  
+    padding-inline: var(--desktop-pad-i);
+    margin-block-end: 9rem;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 7rem;
+    position: relative;
+    top: 2rem;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  .intro_img {
+    flex: 1;
+    position: relative;
+    top: 6rem;
+  }
+
+  .intro_content {
+    position: unset;
+    text-align: left;
+    justify-items: flex-start;
+    padding-block: 1.5rem 3rem;
+    padding-inline: 0;
+    row-gap: 1rem;
+    flex: 1;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .intro {
+    background: url("/images/banner wb.jpg");
+    height: 400px;
+
+    padding-inline: var(--desktop-pad-i);
+    margin-block-end: 4rem;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    position: relative;
+    top: 2rem;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  .intro_img {
+    flex: 1;
+    position: relative;
+    top: 3rem;
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .intro {
+    background: url("/images/banner wb.jpg");
+    height: 200px;
+    padding-inline: var(--mobile-pad-i);
+    margin-block-end: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    position: relative;
+    top: 2rem;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: -14vw center;
+  }
+
+  .intro_img {
+    width: 10%;
+    max-width: 200%;
+    margin: 0;
+    position: fixed;
+    top: 0;
+  }
+
+  .intro_content {
+    padding: var(--mobile-pad-b) var(--mobile-pad-i); /* Use mobile padding */
+    text-align: center; /* Center align text on smaller screens */
+    justify-items: center; /* Center align items */
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .intro {
+    background: url("/images/banner wb.jpg");
+    height: 500px; /* Adjust height for iPad screens */
+    padding-inline: var(--tablet-pad-i); /* Use tablet padding */
+    margin-block-end: 6rem; /* Adjust margin for iPad screens */
+    display: flex;
+    flex-direction: row-reverse; /* Reverse direction for image positioning */
+    justify-content: center;
+    align-items: center;
+    gap: 3rem; /* Decrease gap between elements */
+    position: relative;
+    top: 2rem;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  .intro_img {
+    flex: 1;
+    max-width: 100%;
+    position: relative;
+    top: 3rem;
+  }
+
+  .intro_content {
+    padding: var(--tablet-pad-b) var(--tablet-pad-i); /* Use tablet padding */
+    text-align: left; /* Left align text on iPad screens */
+    justify-items: flex-start; /* Align items to the start */
+  }
+}

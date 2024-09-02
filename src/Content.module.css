@@ -1,0 +1,154 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.box{
+  background-color: rgb(27, 26, 26);
+  background-size: cover;
+  
+}
+
+.content {
+  /* background-color:  black; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.intro_content {
+  /* background-color: rgba(121, 121, 255, 0.849); */
+
+  color: white;
+  text-align: center;
+  padding: calc(var(--desktop-pad-b) * 4) var(--mobile-pad-i);
+  display: grid;
+  row-gap: 1rem;
+  justify-items: center;
+  position: relative;
+  transition: transform 0.5s ease-in-out;
+  border-radius: 10px;
+}
+
+.intro_content::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  height: 110%;
+  background-size: cover;
+  background: url("/images/GDClogo.jpeg") center/contain no-repeat;
+  filter: blur(20px); /* Adjust the blur radius as needed */
+  z-index: -1; /* Ensure the overlay stays beneath the content */
+}
+
+.intro_content:hover {
+  transform: scale(1.05); /* Example: Scale up on hover for animation */
+}
+
+.title {
+  font-family: var(--ff-display);
+  font-size: calc(var(--fs) * 3.875);
+  font-weight: 500;
+  line-height: 1;
+  color: #daa520e0;
+  text-decoration: underline;
+}
+
+.titles {
+  font-family: var(--ff-display);
+  font-size: calc(var(--fs) * 1.875);
+  font-weight: 200;
+  line-height: 2;
+  /* Adjusted position if necessary */
+}
+
+.description {
+  font-family: var(--ff-display);
+  font-size: calc(var(--fs) * 1.8);
+  line-height: 1.75;
+  max-width: 70ch;
+  line-height: 2;
+  margin-top: 2rem;
+  text-align: center;
+  /* Adjusted position if necessary */
+}
+
+.descriptions {
+  font-family: var(--ff-display);
+  font-size: calc(var(--fs) * 2);
+  font-weight: bold;
+  margin-top: 2rem; /* Adjusted margin-top */
+  margin-bottom: 2rem;
+  letter-spacing: 1px;
+  text-align: center;
+ 
+}
+
+.descriptions h3 {
+  font-size: calc(var(--fs) * 2);
+  font-family: var(--ff-display);
+}
+
+.descriptionse {
+  font-size: calc(var(--fs) * 2);
+  font-family: var(--ff-display);
+  font-weight: bold;
+  margin: 0;
+}
+
+.view_plans_btn {
+  width: 250px;
+  margin: 2rem auto 3rem;
+  z-index: 10;
+  border: 2px solid rgb(231, 171, 19);
+  padding: 1rem 2rem;
+  margin-block-start: 0.75rem;
+  color: rgb(231, 171, 19);
+  text-transform: uppercase;
+  font-family: var(--ff-display);
+  letter-spacing: 2px;
+}
+
+.view_plans_btn {
+  margin-block-start: 0.5rem;
+  font-weight: var(--fw-karla-bold);
+  transition: all 0.125s ease-in-out;
+}
+
+.view_plans_btn:hover {
+  background-color: #daa520e0;
+  color: white;
+  cursor: pointer;
+}
+
+.below {
+  text-align: center;
+  color: white;
+  font-family: var(--ff-display);
+  font-size: 25px;
+}
+
+.below2 {
+  margin-top: 3%;
+}
+
+.below3 {
+  margin-top: 3%;
+}
+
+.googleMap {
+  display: flex;
+  margin-top: 1rem;
+}
+
+@media screen and (max-width: 600px) {
+  .below{
+    font-size: 18px;
+  }
+}
+
+/* @media screen and (min-width: 768px) and (max-width: 1023px) {
+}  */
